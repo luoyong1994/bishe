@@ -1,7 +1,7 @@
 package com.ynet.fullview.model;
 
-public class artic {
-    private Integer articId;
+public class Artic {
+    private String articId;
 
     private String articTitle;
 
@@ -9,11 +9,11 @@ public class artic {
 
     private String articType;
 
-    public Integer getArticId() {
+    public String getArticId() {
         return articId;
     }
 
-    public void setArticId(Integer articId) {
+    public void setArticId(String articId) {
         this.articId = articId;
     }
 

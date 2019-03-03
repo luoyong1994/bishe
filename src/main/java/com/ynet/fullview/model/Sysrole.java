@@ -1,15 +1,15 @@
 package com.ynet.fullview.model;
 
-public class sysrole {
-    private Integer roleId;
+public class Sysrole {
+    private String roleId;
 
     private String roleDesc;
 
-    public Integer getRoleId() {
+    public String getRoleId() {
         return roleId;
     }
 
-    public void setRoleId(Integer roleId) {
+    public void setRoleId(String roleId) {
         this.roleId = roleId;
     }
 

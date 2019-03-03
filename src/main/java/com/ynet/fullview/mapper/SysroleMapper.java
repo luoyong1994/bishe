@@ -1,4 +1,4 @@
 package com.ynet.fullview.mapper;
 
-public interface resourceMapper {
+public interface SysroleMapper {
 }

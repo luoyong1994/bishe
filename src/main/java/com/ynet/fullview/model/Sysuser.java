@@ -1,7 +1,7 @@
 package com.ynet.fullview.model;
 
-public class sysuser {
-    private Integer userId;
+public class Sysuser {
+    private String userId;
 
     private String userName;
 
@@ -9,11 +9,13 @@ public class sysuser {
 
     private String userPhone;
 
-    public Integer getUserId() {
+    private String userType;
+
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -39,5 +41,13 @@ public class sysuser {
 
     public void setUserPhone(String userPhone) {
         this.userPhone = userPhone == null ? null : userPhone.trim();
+    }
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType == null ? null : userType.trim();
     }
 }

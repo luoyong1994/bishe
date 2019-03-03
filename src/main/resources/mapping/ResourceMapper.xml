@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ynet.fullview.mapper.ResourceMapper">
+  <resultMap id="BaseResultMap" type="com.ynet.fullview.model.Resource">
+    <result column="source_id" jdbcType="INTEGER" property="sourceId" />
+    <result column="source_name" jdbcType="VARCHAR" property="sourceName" />
+    <result column="source_url" jdbcType="VARCHAR" property="sourceUrl" />
+    <result column="source_type" jdbcType="VARCHAR" property="sourceType" />
+    <result column="source_parentId" jdbcType="INTEGER" property="sourceParentid" />
+    <result column="source_sort" jdbcType="INTEGER" property="sourceSort" />
+  </resultMap>
+
+</mapper>

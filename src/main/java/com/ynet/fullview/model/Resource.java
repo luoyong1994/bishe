@@ -1,7 +1,7 @@
 package com.ynet.fullview.model;
 
-public class resource {
-    private Integer sourceId;
+public class Resource {
+    private String sourceId;
 
     private String sourceName;
 
@@ -9,15 +9,15 @@ public class resource {
 
     private String sourceType;
 
-    private Integer sourceParentid;
+    private String sourceParentid;
 
-    private Integer sourceSort;
+    private String sourceSort;
 
-    public Integer getSourceId() {
+    public String getSourceId() {
         return sourceId;
     }
 
-    public void setSourceId(Integer sourceId) {
+    public void setSourceId(String sourceId) {
         this.sourceId = sourceId;
     }
 
@@ -45,19 +45,19 @@ public class resource {
         this.sourceType = sourceType == null ? null : sourceType.trim();
     }
 
-    public Integer getSourceParentid() {
+    public String getSourceParentid() {
         return sourceParentid;
     }
 
-    public void setSourceParentid(Integer sourceParentid) {
+    public void setSourceParentid(String sourceParentid) {
         this.sourceParentid = sourceParentid;
     }
 
-    public Integer getSourceSort() {
+    public String getSourceSort() {
         return sourceSort;
     }
 
-    public void setSourceSort(Integer sourceSort) {
+    public void setSourceSort(String sourceSort) {
         this.sourceSort = sourceSort;
     }
 }
