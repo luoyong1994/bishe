@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ynet.fullview.dao.InOrderMapper">
+
+    <sql id="Base_Column_List">
+    id, shop, wantName, customerQQ,serviceQQ, projectName, technology, orderDate, totalAmt, bookAmt, projectProcess,
+    programAmt, paperTitle, paperAmt
+  </sql>
+    <select id="queryInOrder"  parameterType="com.ynet.fullview.model.OrderInfo" resultType="com.ynet.fullview.model.InOrder">
+        select
+        <include refid="Base_Column_List"/>
+        from inorder
+        where id = #{id}
+    </select>
+
+
+    <insert id="addInOrder" parameterType="com.ynet.fullview.model.OrderInfo">
+    insert into inorder(id, shop, wantName, customerQQ,serviceQQ, projectName, technology, orderDate, totalAmt, bookAmt, projectProcess,
+    programAmt, paperTitle, paperAmt)values (#{id},#{shop},#{wantName},#{customerQQ},#{serviceQQ},#{projectName},#{technology},#{orderDate},#{totalAmt},#{bookAmt},#{projectProcess},#{programAmt},#{paperTitle},#{paperAmt})
+  </insert>
+
+    <delete id="deleteInOrder">
+    delete from inorder where id=#{id}
+  </delete>
+
+    <update id="updaetInOrder" parameterType="com.ynet.fullview.model.OrderInfo">
+        update inorder set
+        <trim suffixOverrides=",">
+            <if test="shop!=null">
+                shop=#{shop},
+            </if>
+            <if test="wantName!=null">
+                wantName=#{wantName},
+            </if>
+            <if test="customerQQ!=null">
+                customerQQ=#{customerQQ},
+            </if>
+            <if test="serviceQQ!=null">
+                serviceQQ=#{serviceQQ}
+            </if>
+            <if test="shop!=null">
+                projectName=#{projectName},
+            </if>
+            <if test="technology!=null">
+                technology=#{technology},
+            </if>
+            <if test="shop!=null">
+                orderDate=#{orderDate},
+            </if>
+            <if test="totalAmt!=null">
+                totalAmt=#{totalAmt},
+            </if>
+            <if test="bookAmt!=null">
+                bookAmt=#{bookAmt},
+            </if>
+            <if test="shop!=null">
+                projectProcess=#{projectProcess},
+            </if>
+            <if test="programAmt!=null">
+                programAmt=#{programAmt},
+            </if>
+            <if test="paperTitle!=null">
+                paperTitle=#{paperTitle},
+            </if>
+            <if test="paperAmt!=null">
+                paperAmt=#{paperAmt},
+            </if>
+        </trim>
+        where id =#{id}
+    </update>
+
+
+
+
+</mapper>

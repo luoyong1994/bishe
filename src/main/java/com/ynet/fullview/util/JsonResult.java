@@ -1,5 +1,8 @@
 package com.ynet.fullview.util;
 
+
+import com.ynet.fullview.exception.ActionException;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Administrator
@@ -20,6 +23,7 @@ public class JsonResult {
     public JsonResult() {
     }
 
+
     public JsonResult(String error){
         state = ERROR;
         this.message = error;
@@ -37,7 +41,12 @@ public class JsonResult {
 
     public JsonResult(int state, Throwable e) {
         this.state = state;
-        this.message = e.getMessage();
+        if(e instanceof ActionException){
+            ActionException actionException = (ActionException)e;
+            this.message=actionException.getErrorMsg();
+        }else{
+            this.message = e.getMessage();
+        }
     }
 
     public int getState() {

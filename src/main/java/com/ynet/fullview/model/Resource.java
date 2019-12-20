@@ -1,63 +1,63 @@
 package com.ynet.fullview.model;
 
 public class Resource {
-    private String sourceId;
+    private String id;
 
-    private String sourceName;
+    private String name;
 
-    private String sourceUrl;
+    private String router;
 
-    private String sourceType;
+    private String type;
 
-    private String sourceParentid;
+    private Integer parentid;
 
-    private String sourceSort;
+    private Integer sort;
 
-    public String getSourceId() {
-        return sourceId;
+    public String getId() {
+        return id;
     }
 
-    public void setSourceId(String sourceId) {
-        this.sourceId = sourceId;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getSourceName() {
-        return sourceName;
+    public String getName() {
+        return name;
     }
 
-    public void setSourceName(String sourceName) {
-        this.sourceName = sourceName == null ? null : sourceName.trim();
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
     }
 
-    public String getSourceUrl() {
-        return sourceUrl;
+    public String getRouter() {
+        return router;
     }
 
-    public void setSourceUrl(String sourceUrl) {
-        this.sourceUrl = sourceUrl == null ? null : sourceUrl.trim();
+    public void setRouter(String router) {
+        this.router = router == null ? null : router.trim();
     }
 
-    public String getSourceType() {
-        return sourceType;
+    public String getType() {
+        return type;
     }
 
-    public void setSourceType(String sourceType) {
-        this.sourceType = sourceType == null ? null : sourceType.trim();
+    public void setType(String type) {
+        this.type = type == null ? null : type.trim();
     }
 
-    public String getSourceParentid() {
-        return sourceParentid;
+    public Integer getParentid() {
+        return parentid;
     }
 
-    public void setSourceParentid(String sourceParentid) {
-        this.sourceParentid = sourceParentid;
+    public void setParentid(Integer parentid) {
+        this.parentid = parentid;
     }
 
-    public String getSourceSort() {
-        return sourceSort;
+    public Integer getSort() {
+        return sort;
     }
 
-    public void setSourceSort(String sourceSort) {
-        this.sourceSort = sourceSort;
+    public void setSort(Integer sort) {
+        this.sort = sort;
     }
 }

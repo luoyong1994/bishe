@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ynet.fullview.dao.AcceptOrderFlowMapper">
+  <resultMap id="BaseResultMap" type="com.ynet.fullview.model.AcceptOrderFlow">
+    <id column="flowNo" jdbcType="VARCHAR" property="flowno" />
+    <result column="orderId" jdbcType="VARCHAR" property="orderid" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="qq" jdbcType="VARCHAR" property="qq" />
+    <result column="orderDate" jdbcType="VARCHAR" property="orderdate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    flowNo, orderId, price, tel, qq, orderDate
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from acceptorderflow
+    where flowNo = #{flowno,jdbcType=VARCHAR}
+  </select>
+
+</mapper>

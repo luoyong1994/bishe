@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ynet.fullview.dao.ClassifyMapper" >
+  <resultMap id="BaseResultMap" type="com.ynet.fullview.model.Classify" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, name
+  </sql>
+
+  <insert id="addClassify" parameterType="com.ynet.fullview.model.Classify">
+    insert into classify(id,name) values (#{id},#{name});
+  </insert>
+
+  <update id="updateClassify" parameterType="com.ynet.fullview.model.Classify">
+    update classify set name =#{name} where id=#{id}
+  </update>
+
+  <delete id="deleteClassify" parameterType="com.ynet.fullview.model.Classify">
+    delete from classify where id=#{id}
+  </delete>
+
+  <select id="queryClassify" resultMap="BaseResultMap" parameterType="com.ynet.fullview.model.Classify" >
+    select 
+    <include refid="Base_Column_List" />
+    from classify
+  </select>
+
+
+</mapper>

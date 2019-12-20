@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ynet.fullview.dao.AnnexMapper">
+    <resultMap id="BaseResultMap" type="com.ynet.fullview.model.Annex">
+        <result column="orderId" property="orderId" jdbcType="VARCHAR"/>
+        <result column="docPath" property="docPath" jdbcType="VARCHAR"/>
+        <result column="docName" property="docName" jdbcType="VARCHAR"/>
+        <result column="imagePath" property="imagePath" jdbcType="VARCHAR"/>
+        <result column="remarks" property="remarks" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        orderId, docPath, docName, imagePath, remarks
+  </sql>
+    <select id="queryAnnex" resultMap="BaseResultMap" parameterType="com.ynet.fullview.model.OrderInfo" resultType="com.ynet.fullview.model.Annex">
+        select
+        <include refid="Base_Column_List"/>
+        from annex
+        where  orderId= #{id}
+    </select>
+
+    <insert id="addAnnex" parameterType="com.ynet.fullview.model.OrderInfo">
+      insert into annex(orderId, docPath, docName, imagePath, remarks) values (
+      #{id},#{docPath},#{docName},#{imagePath},#{remarks});
+  </insert>
+
+    <update id="updateAnnex" parameterType="com.ynet.fullview.model.OrderInfo">
+        update annex set
+        <trim suffixOverrides=",">
+            <if test="docPath!=null">
+                docPath=#{docPath},
+            </if>
+            <if test="docName!=null">
+                docName=#{docPath},
+            </if>
+            <if test="imagePath!=null">
+                imagePath=#{docPath},
+            </if>
+            <if test="remarks!=null">
+                remarks=#{docPath},
+            </if>
+        </trim>
+        where orderId=#{id}
+    </update>
+
+    <delete id="deleteAnnex">
+        delete from annex where orderId=#{id}
+    </delete>
+
+</mapper>
