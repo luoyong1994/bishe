@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ynet.fullview.dao.OutOrderMapper">
+    <resultMap id="BaseResultMap" type="com.ynet.fullview.model.OutOrder">
+        <result column="orderId" property="orderId" jdbcType="VARCHAR"/>
+        <result column="totalAmt" property="totalAmt" jdbcType="DECIMAL"/>
+        <result column="programAmt" property="programAmt" jdbcType="DECIMAL"/>
+        <result column="paperAmt" property="paperAmt" jdbcType="DECIMAL"/>
+        <result column="programName" property="programName" jdbcType="VARCHAR"/>
+        <result column="paperName" property="paperName" jdbcType="VARCHAR"/>
+        <result column="tel" property="tel" jdbcType="VARCHAR"/>
+        <result column="projectProcess" property="projectProcess" jdbcType="VARCHAR"/>
+        <result column="orderDate" property="orderDate" jdbcType="VARCHAR"/>
+        <result column="qq" property="qq" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    orderId, totalAmt, programAmt, paperAmt, programName, paperName, tel, projectProcess, orderDate, qq
+    </sql>
+
+    <insert id="addOutOrder" parameterType="com.ynet.fullview.model.OrderInfo">
+      insert into outorder(orderId,totalAmt,programAmt,paperAmt,programName,paperName,tel,projectProcess,orderDate,qq)
+      values (#{id},#{totalAmt},#{programAmt},#{paperAmt},#{programName},#{paperName},#{tel},#{projectProcess},#{orderDate},#{qq})
+  </insert>
+
+    <update id="updateOutOrder" parameterType="com.ynet.fullview.model.OrderInfo">
+        update outorder set
+        <trim suffixOverrides=",">
+            <if test="totalAmt!=null">
+                totalAmt=#{totalAmt},
+            </if>
+            <if test="programAmt!=null">
+                programAmt=#{programAmt},
+            </if>
+            <if test="paperAmt!=null">
+                paperAmt=#{paperAmt},
+            </if>
+            <if test="programName!=null">
+                programName=#{programName},
+            </if>
+            <if test="paperName!=null">
+                paperName=#{paperName},
+            </if>
+            <if test="tel!=null">
+                tel=#{tel},
+            </if>
+            <if test="projectProcess!=null">
+                projectProcess=#{projectProcess},
+            </if>
+            <if test="orderDate!=null">
+                orderDate=#{orderDate},
+            </if>
+            <if test="qq!=null">
+                qq=#{qq},
+            </if>
+        </trim>
+        where orderId =#{id}
+    </update>
+
+    <delete id="deleteOutOrder">
+        delete  from  outorder where orderId =#{id}
+    </delete>
+
+
+    <select id="queryOutOrder" parameterType="com.ynet.fullview.model.OrderInfo" resultType="com.ynet.fullview.model.OutOrder">
+        select <include refid="Base_Column_List"/> from outorder where orderId=#{id};
+    </select>
+
+    <select id="queryOutOrderById" parameterType="com.ynet.fullview.model.OrderInfo" resultType="com.ynet.fullview.model.OutOrder">
+          select * from outorder where orderId = #{id}
+    </select>
+
+
+</mapper>

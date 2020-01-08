@@ -1,0 +1,1 @@
+[lf-1][SERVER_NAME_IS_UNDEFINED][2020-01-08 22:02:30.888][ERROR][http-nio-8080-exec-1][MyExceptionHandler.java:17] - org.apache.shiro.UnavailableSecurityManagerException: No SecurityManager accessible to the calling code, either bound to the org.apache.shiro.util.ThreadContext or as a vm static singleton.  This is an invalid application configuration.

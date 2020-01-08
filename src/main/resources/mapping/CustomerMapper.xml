@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ynet.fullview.dao.CustomerMapper">
+
+    <select id="queryOrderInfo" resultType="com.ynet.fullview.model.OrderInfo" parameterType="java.lang.String">
+          select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks
+        from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id)
+        <if test="content!=null">
+            and projectName like concat('%',#{content},'%')
+        </if>
+    </select>
+
+    <select id="queryOrderDeatil" parameterType="com.ynet.fullview.model.OrderInfo" resultType="com.ynet.fullview.model.OrderInfo">
+        select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks
+        from inorder join annex on orderId=id where id=#{id}
+    </select>
+
+    <insert id="addAcceptOrderFlow" parameterType="com.ynet.fullview.model.OrderInfo">
+        insert into acceptorderflow(flowNo,orderId,price,tel,qq,orderDate,programName) values (#{flowNo},#{id},#{price},#{tel},#{qq},#{orderDate},#{programName})
+    </insert>
+
+</mapper>

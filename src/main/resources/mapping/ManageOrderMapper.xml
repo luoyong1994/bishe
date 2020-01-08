@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ynet.fullview.dao.ManageOrderMapper">
+
+    <sql id="Base_inOrder">
+    id, shop, wantName,projectName, technology, io.orderDate,paperTitle,programName,paperName,io.projectProcess
+  </sql>
+    <select id="queryInOrder" resultType="com.ynet.fullview.model.OrderInfo" parameterType="java.lang.String">
+        select <include refid="Base_inOrder"/> from inorder io left join outorder on id=orderId where io.projectProcess!='3' OR io.projectProcess is null
+    </select>
+
+    <sql id="base_acceptflow">
+        flowNo,programName,price,tel,flow.qq,flow.orderDate
+    </sql>
+    <select id="queryAcceptFlow" resultType="com.ynet.fullview.model.OrderInfo">
+        select id,projectName,<include refid="base_acceptflow"/> from inorder join
+        acceptorderflow flow on id = orderId
+    </select>
+
+    <delete id="deleteAcceptFlow" parameterType="com.ynet.fullview.model.OrderInfo">
+        delete from acceptorderflow where flowNo=#{flowNo}
+    </delete>
+    
+    <select id="queryAcceptFlowByFlowId" parameterType="com.ynet.fullview.model.OrderInfo" resultType="com.ynet.fullview.model.OrderInfo">
+        select flowNo,orderId as id,programName,price,tel,qq,orderDate from acceptorderflow where flowNo=#{flowNo}
+    </select>
+
+    <select id="queryOutOrderById" parameterType="com.ynet.fullview.model.OrderInfo" resultType="com.ynet.fullview.model.OrderInfo">
+        select orderId as id from outorder where orderId = #{id}
+    </select>
+
+
+</mapper>
