@@ -20,7 +20,7 @@
   </select>
   
   <insert id="addUser" parameterType="com.ynet.fullview.model.SysUser">
-      insert into sysuser(id,username,name,password,qq,tel) values (#{id},#{username},#{name},#{password},#{qq},#{tel})
+      insert into sysuser(id,username,name,password,qq,tel,random) values (#{id},#{username},#{name},#{password},#{qq},#{tel},#{random})
   </insert>
   
   <select id="queryUsers" parameterType="com.ynet.fullview.model.SysUser" resultType="com.ynet.fullview.model.SysUser">

@@ -27,5 +27,6 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
 //        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/*").excludePathPatterns(excludePath);
 
     }
+
 }
 

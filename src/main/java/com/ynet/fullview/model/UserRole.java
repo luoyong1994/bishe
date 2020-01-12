@@ -1,33 +1,21 @@
 package com.ynet.fullview.model;
 
+import lombok.Data;
+
+import java.util.Set;
+
+@Data
 public class UserRole {
+
     private String id;
 
     private Integer userid;
 
-    private Integer roleid;
+    private String roleId;
 
-    public String getId() {
-        return id;
-    }
+    private String roleName;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+    private String roleDesc;
 
-    public Integer getUserid() {
-        return userid;
-    }
-
-    public void setUserid(Integer userid) {
-        this.userid = userid;
-    }
-
-    public Integer getRoleid() {
-        return roleid;
-    }
-
-    public void setRoleid(Integer roleid) {
-        this.roleid = roleid;
-    }
+    private Set<Resource> resources;
 }

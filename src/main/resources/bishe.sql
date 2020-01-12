@@ -1,13 +1,14 @@
 drop database if exists bishe;
 create database bishe;
 use bishe;
-CREATE TABLE sysuser(
+create TABLE sysuser(
     id varchar(50) NOT NULL PRIMARY KEY comment 'id',
     username varchar(50) comment '用户名',
     name VARCHAR(100) NOT NULL comment '姓名',
     password VARCHAR(50) NOT NULL comment '密码',
     qq varchar(50) comment '人员qq号',
-    tel varchar(11) not null comment '电话'
+    tel varchar(11) not null comment '电话',
+    random varchar(32) comment '密码加盐'
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8;
 
 insert into sysuser(id,username,name,password,tel,qq)values ("07e31d155fb34323973c23d0c24d093e","admin132","admin","66854f1b110143269dbffdd806fa66eb","15096618134","1411548549");
@@ -19,6 +20,7 @@ create table user_role(
 
 create TABLE sysrole(
   id int not NULL PRIMARY KEY  comment '角色id',
+  roleName varchar2(20) not null comment '角色名'
   roleDesc VARCHAR(20) not NULL comment '角色名称'
 ) ENGINE=INNODB DEFAULT CHARSET=utf8;
 
@@ -28,6 +30,7 @@ create TABLE role_source(
 	sourceId INT NOT NULL comment '资源id'
 )ENGINE=INNODB DEFAULT CHARSET=utf8;
 
+--这也就是菜单表
 create TABLE resource(
 	id INT NOT NULL PRIMARY KEY  comment '资源id',
 	Name VARCHAR(40) NOT NULL comment '资源名字',
@@ -36,6 +39,8 @@ create TABLE resource(
 	parentId int comment '资源父id',
 	sort int(2) NOT NULL comment '资源序号'
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8;
+
+--待扩展就是权限表，更加细粒度的控制
 
 create table inorder(
   id varchar(50) NOT NULL PRIMARY KEY  comment '项目编号',

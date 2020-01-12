@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ynet.fullview.dao.AuthManagerMapper">
+
+    <select id="queryAuthorityInfo" resultMap="java.util.Map" parameterType="com.ynet.fullview.model.SysUser">
+        select
+            user.username userName,user.name name,user.password passWord,user.qq qq,user.tel tel,user.random random,
+            role.roleName roleName,role.roleDesc roleDesc,
+            resource.Name resourceName,resource.router resourceRouter,resource.parentId resourceParentId,resource.sort
+                resourceSort
+        from sysuser
+            user join user_role as us_role on user.id=us_role.userId
+                join sysrole role on us_role.roleId= role.id
+                    join role_source role_source on role_source.roleId=role.id
+                        join resource on resource.id=role_source.sourceId
+        where user.username=#{username}
+    </select>
+
+</mapper>

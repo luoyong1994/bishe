@@ -1,5 +1,7 @@
 package com.ynet.fullview.authoritymanage.bean;
 
+import lombok.Data;
+
 import java.util.Set;
 
 /**
@@ -9,42 +11,10 @@ import java.util.Set;
  * Time: 23:22
  * Description: No Description
  */
+@Data
 public class Role {
 
     private String id;
     private String roleName;
     private Set<Permissions> permissions;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getRoleName() {
-        return roleName;
-    }
-
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
-    }
-
-    public Set<Permissions> getPermissions() {
-        return permissions;
-    }
-
-    public void setPermissions(Set<Permissions> permissions) {
-        this.permissions = permissions;
-    }
-
-    @Override
-    public String toString() {
-        return "Role{" +
-                "id='" + id + '\'' +
-                ", roleName='" + roleName + '\'' +
-                ", permissions=" + permissions +
-                '}';
-    }
 }
