@@ -3,14 +3,15 @@
 <mapper namespace="com.ynet.fullview.dao.CustomerMapper">
 
     <select id="queryOrderInfo" resultType="com.ynet.fullview.model.OrderInfo" parameterType="java.lang.String">
-          select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks
+        select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks
         from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id)
         <if test="content!=null">
             and projectName like concat('%',#{content},'%')
         </if>
     </select>
 
-    <select id="queryOrderDeatil" parameterType="com.ynet.fullview.model.OrderInfo" resultType="com.ynet.fullview.model.OrderInfo">
+    <select id="queryOrderDeatil" resultType="com.ynet.fullview.model.OrderInfo"
+            parameterType="com.ynet.fullview.model.OrderInfo">
         select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks
         from inorder join annex on orderId=id where id=#{id}
     </select>

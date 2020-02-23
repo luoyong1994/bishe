@@ -4,7 +4,7 @@
 
     <sql id="Base_Column_List">
     id, shop, wantName, customerQQ,serviceQQ, projectName, technology, orderDate, totalAmt, bookAmt, projectProcess,
-    programAmt, paperTitle, paperAmt
+    programAmt, paperTitle, paperAmt,orderBillStatue
   </sql>
     <select id="queryInOrder"  parameterType="com.ynet.fullview.model.OrderInfo" resultType="com.ynet.fullview.model.InOrder">
         select

@@ -1,0 +1,936 @@
+2020-02-12 15:39:32.200 [ restartedMain ] - [ INFO  ] [ com.ynet.fullview.FullviewApplication : 50 ] - Starting FullviewApplication on DESKTOP-T7NR6EF with PID 19792 (C:\mywork\fullview\target\classes started by 86150 in C:\mywork\fullview)
+2020-02-12 15:39:32.206 [ restartedMain ] - [ DEBUG ] [ com.ynet.fullview.FullviewApplication : 53 ] - Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2020-02-12 15:39:32.207 [ restartedMain ] - [ INFO  ] [ com.ynet.fullview.FullviewApplication : 647 ] - No active profile set, falling back to default profiles: default
+2020-02-12 15:39:33.865 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\AcceptOrderFlowMapper.class]
+2020-02-12 15:39:33.866 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\AnnexMapper.class]
+2020-02-12 15:39:33.867 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\AuthManagerMapper.class]
+2020-02-12 15:39:33.868 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\ClassifyMapper.class]
+2020-02-12 15:39:33.868 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\CustomerMapper.class]
+2020-02-12 15:39:33.869 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\InOrderMapper.class]
+2020-02-12 15:39:33.870 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\ManageOrderMapper.class]
+2020-02-12 15:39:33.871 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\OutOrderMapper.class]
+2020-02-12 15:39:33.872 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\ResourceMapper.class]
+2020-02-12 15:39:33.872 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\RoleRourceMapper.class]
+2020-02-12 15:39:33.873 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\SysRoleMapper.class]
+2020-02-12 15:39:33.873 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\SysUserMapper.class]
+2020-02-12 15:39:33.874 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\UserRoleMapper.class]
+2020-02-12 15:39:33.875 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'acceptOrderFlowMapper' and 'com.ynet.fullview.dao.AcceptOrderFlowMapper' mapperInterface
+2020-02-12 15:39:33.876 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'acceptOrderFlowMapper'.
+2020-02-12 15:39:33.877 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'annexMapper' and 'com.ynet.fullview.dao.AnnexMapper' mapperInterface
+2020-02-12 15:39:33.877 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'annexMapper'.
+2020-02-12 15:39:33.877 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'authManagerMapper' and 'com.ynet.fullview.dao.AuthManagerMapper' mapperInterface
+2020-02-12 15:39:33.878 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'authManagerMapper'.
+2020-02-12 15:39:33.878 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'classifyMapper' and 'com.ynet.fullview.dao.ClassifyMapper' mapperInterface
+2020-02-12 15:39:33.878 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'classifyMapper'.
+2020-02-12 15:39:33.878 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'customerMapper' and 'com.ynet.fullview.dao.CustomerMapper' mapperInterface
+2020-02-12 15:39:33.879 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'customerMapper'.
+2020-02-12 15:39:33.879 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'inOrderMapper' and 'com.ynet.fullview.dao.InOrderMapper' mapperInterface
+2020-02-12 15:39:33.880 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'inOrderMapper'.
+2020-02-12 15:39:33.880 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'manageOrderMapper' and 'com.ynet.fullview.dao.ManageOrderMapper' mapperInterface
+2020-02-12 15:39:33.880 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'manageOrderMapper'.
+2020-02-12 15:39:33.881 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'outOrderMapper' and 'com.ynet.fullview.dao.OutOrderMapper' mapperInterface
+2020-02-12 15:39:33.881 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'outOrderMapper'.
+2020-02-12 15:39:33.882 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'resourceMapper' and 'com.ynet.fullview.dao.ResourceMapper' mapperInterface
+2020-02-12 15:39:33.882 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'resourceMapper'.
+2020-02-12 15:39:33.883 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'roleRourceMapper' and 'com.ynet.fullview.dao.RoleRourceMapper' mapperInterface
+2020-02-12 15:39:33.883 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'roleRourceMapper'.
+2020-02-12 15:39:33.884 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'sysRoleMapper' and 'com.ynet.fullview.dao.SysRoleMapper' mapperInterface
+2020-02-12 15:39:33.885 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleMapper'.
+2020-02-12 15:39:33.885 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.ynet.fullview.dao.SysUserMapper' mapperInterface
+2020-02-12 15:39:33.886 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2020-02-12 15:39:33.886 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'userRoleMapper' and 'com.ynet.fullview.dao.UserRoleMapper' mapperInterface
+2020-02-12 15:39:33.887 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
+2020-02-12 15:39:34.921 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 135 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-02-12 15:39:34.980 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.VFS : 77 ] - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2020-02-12 15:39:34.983 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.AcceptOrderFlow matches criteria [is assignable to Object]
+2020-02-12 15:39:34.983 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.Annex matches criteria [is assignable to Object]
+2020-02-12 15:39:34.984 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.Classify matches criteria [is assignable to Object]
+2020-02-12 15:39:34.985 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.InOrder matches criteria [is assignable to Object]
+2020-02-12 15:39:34.985 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.OrderInfo matches criteria [is assignable to Object]
+2020-02-12 15:39:34.986 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.OutOrder matches criteria [is assignable to Object]
+2020-02-12 15:39:34.987 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.Resource matches criteria [is assignable to Object]
+2020-02-12 15:39:34.988 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.RoleRource matches criteria [is assignable to Object]
+2020-02-12 15:39:34.988 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.SysRole matches criteria [is assignable to Object]
+2020-02-12 15:39:34.989 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.SysUser matches criteria [is assignable to Object]
+2020-02-12 15:39:34.989 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.UserRole matches criteria [is assignable to Object]
+2020-02-12 15:39:34.990 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 437 ] - Scanned package: 'com.ynet.fullview.model' for aliases
+2020-02-12 15:39:35.155 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\AcceptOrderFlowMapper.xml]'
+2020-02-12 15:39:35.227 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\AnnexMapper.xml]'
+2020-02-12 15:39:35.262 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\AuthManager.xml]'
+2020-02-12 15:39:35.299 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\ClassifyMapper.xml]'
+2020-02-12 15:39:35.327 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\CustomerMapper.xml]'
+2020-02-12 15:39:35.361 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\InOrderMapper.xml]'
+2020-02-12 15:39:35.394 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\ManageOrderMapper.xml]'
+2020-02-12 15:39:35.424 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\OutOrderMapper.xml]'
+2020-02-12 15:39:35.446 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\ResourceMapper.xml]'
+2020-02-12 15:39:35.472 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\RoleRourceMapper.xml]'
+2020-02-12 15:39:35.497 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\SysRoleMapper.xml]'
+2020-02-12 15:39:35.525 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\SysUserMapper.xml]'
+2020-02-12 15:39:35.552 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\UserRoleMapper.xml]'
+2020-02-12 15:39:36.132 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-12 15:39:36.142 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-02-12 15:39:36.142 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-02-12 15:39:36.243 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/bishe] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-02-12 15:39:36.249 [ restartedMain ] - [ DEBUG ] [ org.apache.shiro.spring.web.ShiroFilterFactoryBean : 424 ] - Creating Shiro Filter instance.
+2020-02-12 15:39:36.264 [ restartedMain ] - [ DEBUG ] [ org.apache.shiro.spring.web.ShiroFilterFactoryBean : 501 ] - Found filter chain candidate filter 'requestContextFilter'
+2020-02-12 15:39:36.272 [ restartedMain ] - [ DEBUG ] [ org.apache.shiro.spring.web.ShiroFilterFactoryBean : 501 ] - Found filter chain candidate filter 'hiddenHttpMethodFilter'
+2020-02-12 15:39:36.276 [ restartedMain ] - [ DEBUG ] [ org.apache.shiro.spring.web.ShiroFilterFactoryBean : 501 ] - Found filter chain candidate filter 'formContentFilter'
+2020-02-12 15:39:36.280 [ restartedMain ] - [ DEBUG ] [ org.apache.shiro.spring.web.ShiroFilterFactoryBean : 501 ] - Found filter chain candidate filter 'characterEncodingFilter'
+2020-02-12 15:39:36.464 [ restartedMain ] - [ DEBUG ] [ com.github.tobato.fastdfs.conn.ConnectionManager : 46 ] - init trackerLocator [39.98.163.208:22122]
+2020-02-12 15:39:36.534 [ restartedMain ] - [ DEBUG ] [ o.h.v.i.engine.resolver.TraversableResolvers : 60 ] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-02-12 15:39:36.534 [ restartedMain ] - [ DEBUG ] [ o.h.v.m.ResourceBundleMessageInterpolator : 89 ] - Loaded expression factory via original TCCL
+2020-02-12 15:39:36.537 [ restartedMain ] - [ DEBUG ] [ o.h.v.i.engine.resolver.TraversableResolvers : 60 ] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-02-12 15:39:36.537 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ConfigurationImpl : 148 ] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-02-12 15:39:36.538 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ConfigurationImpl : 180 ] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-02-12 15:39:36.538 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ConfigurationImpl : 194 ] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-02-12 15:39:36.539 [ restartedMain ] - [ DEBUG ] [ o.h.v.internal.xml.config.ValidationXmlParser : 120 ] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-02-12 15:39:36.540 [ restartedMain ] - [ DEBUG ] [ o.h.v.internal.xml.config.ResourceLoaderHelper : 53 ] - Trying to load META-INF/validation.xml via user class loader
+2020-02-12 15:39:36.540 [ restartedMain ] - [ DEBUG ] [ o.h.v.internal.xml.config.ResourceLoaderHelper : 60 ] - Trying to load META-INF/validation.xml via TCCL
+2020-02-12 15:39:36.541 [ restartedMain ] - [ DEBUG ] [ o.h.v.internal.xml.config.ResourceLoaderHelper : 66 ] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-02-12 15:39:36.541 [ restartedMain ] - [ DEBUG ] [ o.h.v.internal.xml.config.ValidationXmlParser : 127 ] - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-02-12 15:39:36.544 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ValidatorFactoryImpl : 578 ] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-02-12 15:39:36.544 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ValidatorFactoryImpl : 579 ] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-02-12 15:39:36.544 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ValidatorFactoryImpl : 580 ] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-02-12 15:39:36.545 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ValidatorFactoryImpl : 581 ] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-02-12 15:39:36.545 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ValidatorFactoryImpl : 582 ] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-02-12 15:39:37.567 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-12 15:39:37.620 [ restartedMain ] - [ INFO  ] [ com.ynet.fullview.FullviewApplication : 59 ] - Started FullviewApplication in 6.234 seconds (JVM running for 7.247)
+2020-02-12 15:40:10.735 [ http-nio-8088-exec-2 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/bishe] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-12 15:40:10.857 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:40:10.869 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1760aa29] was not registered for synchronization because synchronization is not active
+2020-02-12 15:40:11.017 [ http-nio-8088-exec-2 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 930 ] - {dataSource-1} inited
+2020-02-12 15:40:24.052 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@43b8967a] will not be managed by Spring
+2020-02-12 15:40:24.064 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:40:24.130 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:40:24.295 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:40:24.305 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1760aa29]
+2020-02-12 15:40:24.461 [ http-nio-8088-exec-2 ] - [ ERROR ] [ com.ynet.fullview.exception.MyExceptionHandler : 17 ] - org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+2020-02-12 15:40:42.218 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:40:42.219 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59c4844b] was not registered for synchronization because synchronization is not active
+2020-02-12 15:40:42.219 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@43b8967a] will not be managed by Spring
+2020-02-12 15:40:42.220 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:40:42.221 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:40:42.310 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:40:42.311 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59c4844b]
+2020-02-12 15:40:42.532 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:40:42.533 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@526d23f6] was not registered for synchronization because synchronization is not active
+2020-02-12 15:40:42.534 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@43b8967a] will not be managed by Spring
+2020-02-12 15:40:42.534 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:40:42.535 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:40:42.622 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:40:42.623 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@526d23f6]
+2020-02-12 15:40:50.461 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:40:50.462 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2087079b] was not registered for synchronization because synchronization is not active
+2020-02-12 15:40:50.463 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@43b8967a] will not be managed by Spring
+2020-02-12 15:40:50.464 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 15:40:50.465 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 05dc248bc59b44d4a00b33b732ad3eb6(String)
+2020-02-12 15:40:50.550 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 15:40:50.553 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2087079b]
+2020-02-12 15:41:05.231 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:41:05.231 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4aaca] was not registered for synchronization because synchronization is not active
+2020-02-12 15:41:05.232 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@43b8967a] will not be managed by Spring
+2020-02-12 15:41:05.232 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:41:05.233 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:41:05.318 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:41:05.319 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4aaca]
+2020-02-12 15:41:05.528 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:41:05.529 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13ffcb6c] was not registered for synchronization because synchronization is not active
+2020-02-12 15:41:05.529 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@43b8967a] will not be managed by Spring
+2020-02-12 15:41:05.530 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:41:05.530 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:41:05.616 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:41:05.617 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13ffcb6c]
+2020-02-12 15:41:42.983 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:41:42.984 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27059ba1] was not registered for synchronization because synchronization is not active
+2020-02-12 15:41:42.985 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:41:42.985 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@43b8967a] will not be managed by Spring
+2020-02-12 15:41:42.985 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34f13214] was not registered for synchronization because synchronization is not active
+2020-02-12 15:41:42.985 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:41:42.986 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:41:43.074 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:41:43.075 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27059ba1]
+2020-02-12 15:41:43.076 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@43b8967a] will not be managed by Spring
+2020-02-12 15:41:43.076 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:41:43.077 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:41:43.077 [ http-nio-8088-exec-9 ] - [ ERROR ] [ com.ynet.fullview.exception.MyExceptionHandler : 17 ] - org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+2020-02-12 15:41:43.162 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:41:43.163 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34f13214]
+2020-02-12 15:41:44.370 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:41:44.371 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8cdb375] was not registered for synchronization because synchronization is not active
+2020-02-12 15:41:44.373 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:41:44.375 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:41:44.376 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:41:44.472 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:41:44.472 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8cdb375]
+2020-02-12 15:41:44.704 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:41:44.704 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34962574] was not registered for synchronization because synchronization is not active
+2020-02-12 15:41:44.705 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:41:44.705 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:41:44.706 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:41:44.796 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:41:44.797 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34962574]
+2020-02-12 15:44:27.776 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:44:27.778 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cf7676a] was not registered for synchronization because synchronization is not active
+2020-02-12 15:44:27.889 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:44:27.890 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 15:44:27.891 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 05dc248bc59b44d4a00b33b732ad3eb6(String)
+2020-02-12 15:44:27.982 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 15:44:27.983 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cf7676a]
+2020-02-12 15:44:35.613 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:44:35.615 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37c0fde5] was not registered for synchronization because synchronization is not active
+2020-02-12 15:44:35.616 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:44:35.617 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:44:35.619 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:44:35.711 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:44:35.712 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37c0fde5]
+2020-02-12 15:44:35.981 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:44:35.981 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58954886] was not registered for synchronization because synchronization is not active
+2020-02-12 15:44:35.982 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:44:35.982 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:44:35.982 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:44:36.074 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:44:36.074 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58954886]
+2020-02-12 15:45:45.937 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:45:45.938 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5152d210] was not registered for synchronization because synchronization is not active
+2020-02-12 15:45:46.322 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:45:46.322 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:45:46.323 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:45:46.412 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:45:46.413 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5152d210]
+2020-02-12 15:45:46.498 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:45:46.498 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@afcc1ba] was not registered for synchronization because synchronization is not active
+2020-02-12 15:45:46.499 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:45:46.499 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:45:46.499 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:45:46.589 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:45:46.590 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@afcc1ba]
+2020-02-12 15:45:51.523 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:45:51.524 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c053d58] was not registered for synchronization because synchronization is not active
+2020-02-12 15:45:51.527 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:45:51.527 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 15:45:51.529 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 05dc248bc59b44d4a00b33b732ad3eb6(String)
+2020-02-12 15:45:51.623 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 15:45:51.628 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c053d58]
+2020-02-12 15:46:51.588 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:46:51.590 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dfdf0d1] was not registered for synchronization because synchronization is not active
+2020-02-12 15:46:51.592 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:46:51.594 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:46:51.595 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:46:51.689 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:46:51.690 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dfdf0d1]
+2020-02-12 15:46:54.004 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:46:54.005 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17a9a20] was not registered for synchronization because synchronization is not active
+2020-02-12 15:46:54.007 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:46:54.009 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 15:46:54.012 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 09e901589b734ff18c9b8db362bb79db(String)
+2020-02-12 15:46:54.110 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 15:46:54.112 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17a9a20]
+2020-02-12 15:47:50.934 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:47:50.935 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47374627] was not registered for synchronization because synchronization is not active
+2020-02-12 15:47:50.937 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:47:50.938 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 15:47:50.939 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 09e901589b734ff18c9b8db362bb79db(String)
+2020-02-12 15:47:51.032 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 15:47:51.034 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47374627]
+2020-02-12 15:48:03.598 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:48:03.599 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e6e4e04] was not registered for synchronization because synchronization is not active
+2020-02-12 15:48:03.601 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:48:03.602 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 15:48:03.602 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 09e901589b734ff18c9b8db362bb79db(String)
+2020-02-12 15:48:03.692 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 15:48:03.694 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e6e4e04]
+2020-02-12 15:48:13.051 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:48:13.056 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34580cde] was not registered for synchronization because synchronization is not active
+2020-02-12 15:48:13.058 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:48:13.059 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 15:48:13.059 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 09e901589b734ff18c9b8db362bb79db(String)
+2020-02-12 15:48:13.150 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 15:48:13.150 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34580cde]
+2020-02-12 15:48:25.755 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:48:25.755 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31952df1] was not registered for synchronization because synchronization is not active
+2020-02-12 15:48:25.756 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:48:25.756 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:48:25.757 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:48:25.848 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:48:25.849 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31952df1]
+2020-02-12 15:48:26.061 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:48:26.061 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ee30cce] was not registered for synchronization because synchronization is not active
+2020-02-12 15:48:26.062 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@60a4c1c] will not be managed by Spring
+2020-02-12 15:48:26.063 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:48:26.063 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:48:26.156 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:48:26.156 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ee30cce]
+2020-02-12 15:52:46.504 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:52:46.504 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:52:46.505 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76bac15f] was not registered for synchronization because synchronization is not active
+2020-02-12 15:52:46.505 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4add2f00] was not registered for synchronization because synchronization is not active
+2020-02-12 15:52:47.525 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ com.alibaba.druid.pool.DruidDataSource : 1302 ] - skip not validate connection.
+2020-02-12 15:52:47.525 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ com.alibaba.druid.pool.DruidDataSource : 1302 ] - skip not validate connection.
+2020-02-12 15:52:48.351 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@424f86c3] will not be managed by Spring
+2020-02-12 15:52:48.353 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:52:48.355 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:52:48.447 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:52:48.449 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4add2f00]
+2020-02-12 15:52:48.451 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@424f86c3] will not be managed by Spring
+2020-02-12 15:52:48.452 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:52:48.454 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:52:48.543 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:52:48.545 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76bac15f]
+2020-02-12 15:55:52.713 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:55:52.715 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59f6737c] was not registered for synchronization because synchronization is not active
+2020-02-12 15:55:52.826 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@185c6962] will not be managed by Spring
+2020-02-12 15:55:52.828 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 15:55:52.830 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 05dc248bc59b44d4a00b33b732ad3eb6(String)
+2020-02-12 15:55:52.928 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 15:55:52.930 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59f6737c]
+2020-02-12 15:56:01.025 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:56:01.025 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@324bda9] was not registered for synchronization because synchronization is not active
+2020-02-12 15:56:01.026 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@185c6962] will not be managed by Spring
+2020-02-12 15:56:01.027 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:56:01.027 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:56:01.128 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:56:01.128 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@324bda9]
+2020-02-12 15:56:01.332 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:56:01.333 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c59cec9] was not registered for synchronization because synchronization is not active
+2020-02-12 15:56:01.333 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@185c6962] will not be managed by Spring
+2020-02-12 15:56:01.334 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:56:01.334 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:56:01.432 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:56:01.432 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c59cec9]
+2020-02-12 15:56:04.572 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:56:04.573 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a89ef4e] was not registered for synchronization because synchronization is not active
+2020-02-12 15:56:04.574 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@185c6962] will not be managed by Spring
+2020-02-12 15:56:04.575 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 15:56:04.576 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 05dc248bc59b44d4a00b33b732ad3eb6(String)
+2020-02-12 15:56:04.673 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 15:56:04.674 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a89ef4e]
+2020-02-12 15:58:55.136 [ restartedMain ] - [ INFO  ] [ com.ynet.fullview.FullviewApplication : 50 ] - Starting FullviewApplication on DESKTOP-T7NR6EF with PID 18336 (C:\mywork\fullview\target\classes started by 86150 in C:\mywork\fullview)
+2020-02-12 15:58:55.140 [ restartedMain ] - [ DEBUG ] [ com.ynet.fullview.FullviewApplication : 53 ] - Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2020-02-12 15:58:55.141 [ restartedMain ] - [ INFO  ] [ com.ynet.fullview.FullviewApplication : 647 ] - No active profile set, falling back to default profiles: default
+2020-02-12 15:58:56.128 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\AcceptOrderFlowMapper.class]
+2020-02-12 15:58:56.129 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\AnnexMapper.class]
+2020-02-12 15:58:56.130 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\AuthManagerMapper.class]
+2020-02-12 15:58:56.130 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\ClassifyMapper.class]
+2020-02-12 15:58:56.131 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\CustomerMapper.class]
+2020-02-12 15:58:56.131 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\InOrderMapper.class]
+2020-02-12 15:58:56.132 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\ManageOrderMapper.class]
+2020-02-12 15:58:56.132 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\OutOrderMapper.class]
+2020-02-12 15:58:56.132 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\ResourceMapper.class]
+2020-02-12 15:58:56.133 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\RoleRourceMapper.class]
+2020-02-12 15:58:56.133 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\SysRoleMapper.class]
+2020-02-12 15:58:56.134 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\SysUserMapper.class]
+2020-02-12 15:58:56.134 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 437 ] - Identified candidate component class: file [C:\mywork\fullview\target\classes\com\ynet\fullview\dao\UserRoleMapper.class]
+2020-02-12 15:58:56.135 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'acceptOrderFlowMapper' and 'com.ynet.fullview.dao.AcceptOrderFlowMapper' mapperInterface
+2020-02-12 15:58:56.136 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'acceptOrderFlowMapper'.
+2020-02-12 15:58:56.136 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'annexMapper' and 'com.ynet.fullview.dao.AnnexMapper' mapperInterface
+2020-02-12 15:58:56.136 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'annexMapper'.
+2020-02-12 15:58:56.136 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'authManagerMapper' and 'com.ynet.fullview.dao.AuthManagerMapper' mapperInterface
+2020-02-12 15:58:56.137 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'authManagerMapper'.
+2020-02-12 15:58:56.137 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'classifyMapper' and 'com.ynet.fullview.dao.ClassifyMapper' mapperInterface
+2020-02-12 15:58:56.137 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'classifyMapper'.
+2020-02-12 15:58:56.137 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'customerMapper' and 'com.ynet.fullview.dao.CustomerMapper' mapperInterface
+2020-02-12 15:58:56.138 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'customerMapper'.
+2020-02-12 15:58:56.138 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'inOrderMapper' and 'com.ynet.fullview.dao.InOrderMapper' mapperInterface
+2020-02-12 15:58:56.138 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'inOrderMapper'.
+2020-02-12 15:58:56.138 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'manageOrderMapper' and 'com.ynet.fullview.dao.ManageOrderMapper' mapperInterface
+2020-02-12 15:58:56.139 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'manageOrderMapper'.
+2020-02-12 15:58:56.139 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'outOrderMapper' and 'com.ynet.fullview.dao.OutOrderMapper' mapperInterface
+2020-02-12 15:58:56.139 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'outOrderMapper'.
+2020-02-12 15:58:56.140 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'resourceMapper' and 'com.ynet.fullview.dao.ResourceMapper' mapperInterface
+2020-02-12 15:58:56.141 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'resourceMapper'.
+2020-02-12 15:58:56.141 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'roleRourceMapper' and 'com.ynet.fullview.dao.RoleRourceMapper' mapperInterface
+2020-02-12 15:58:56.141 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'roleRourceMapper'.
+2020-02-12 15:58:56.141 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'sysRoleMapper' and 'com.ynet.fullview.dao.SysRoleMapper' mapperInterface
+2020-02-12 15:58:56.142 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleMapper'.
+2020-02-12 15:58:56.142 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.ynet.fullview.dao.SysUserMapper' mapperInterface
+2020-02-12 15:58:56.142 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2020-02-12 15:58:56.143 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 180 ] - Creating MapperFactoryBean with name 'userRoleMapper' and 'com.ynet.fullview.dao.UserRoleMapper' mapperInterface
+2020-02-12 15:58:56.143 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 216 ] - Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
+2020-02-12 15:58:57.575 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 135 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-02-12 15:58:57.643 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.VFS : 77 ] - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2020-02-12 15:58:57.648 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.AcceptOrderFlow matches criteria [is assignable to Object]
+2020-02-12 15:58:57.649 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.Annex matches criteria [is assignable to Object]
+2020-02-12 15:58:57.650 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.Classify matches criteria [is assignable to Object]
+2020-02-12 15:58:57.651 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.InOrder matches criteria [is assignable to Object]
+2020-02-12 15:58:57.653 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.OrderInfo matches criteria [is assignable to Object]
+2020-02-12 15:58:57.654 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.OutOrder matches criteria [is assignable to Object]
+2020-02-12 15:58:57.655 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.Resource matches criteria [is assignable to Object]
+2020-02-12 15:58:57.657 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.RoleRource matches criteria [is assignable to Object]
+2020-02-12 15:58:57.658 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.SysRole matches criteria [is assignable to Object]
+2020-02-12 15:58:57.659 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.SysUser matches criteria [is assignable to Object]
+2020-02-12 15:58:57.659 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.io.ResolverUtil : 256 ] - Checking to see if class com.ynet.fullview.model.UserRole matches criteria [is assignable to Object]
+2020-02-12 15:58:57.661 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 437 ] - Scanned package: 'com.ynet.fullview.model' for aliases
+2020-02-12 15:58:57.878 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\AcceptOrderFlowMapper.xml]'
+2020-02-12 15:58:57.893 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\AnnexMapper.xml]'
+2020-02-12 15:58:57.902 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\AuthManager.xml]'
+2020-02-12 15:58:57.912 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\ClassifyMapper.xml]'
+2020-02-12 15:58:57.919 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\CustomerMapper.xml]'
+2020-02-12 15:58:57.930 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\InOrderMapper.xml]'
+2020-02-12 15:58:57.939 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\ManageOrderMapper.xml]'
+2020-02-12 15:58:57.950 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\OutOrderMapper.xml]'
+2020-02-12 15:58:57.958 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\ResourceMapper.xml]'
+2020-02-12 15:58:57.963 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\RoleRourceMapper.xml]'
+2020-02-12 15:58:57.970 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\SysRoleMapper.xml]'
+2020-02-12 15:58:57.983 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\SysUserMapper.xml]'
+2020-02-12 15:58:57.998 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 529 ] - Parsed mapper file: 'file [C:\mywork\fullview\target\classes\mapping\UserRoleMapper.xml]'
+2020-02-12 15:58:58.705 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-12 15:58:58.718 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-02-12 15:58:58.719 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-02-12 15:58:58.845 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/bishe] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-02-12 15:58:58.857 [ restartedMain ] - [ DEBUG ] [ org.apache.shiro.spring.web.ShiroFilterFactoryBean : 424 ] - Creating Shiro Filter instance.
+2020-02-12 15:58:58.880 [ restartedMain ] - [ DEBUG ] [ org.apache.shiro.spring.web.ShiroFilterFactoryBean : 501 ] - Found filter chain candidate filter 'requestContextFilter'
+2020-02-12 15:58:58.895 [ restartedMain ] - [ DEBUG ] [ org.apache.shiro.spring.web.ShiroFilterFactoryBean : 501 ] - Found filter chain candidate filter 'hiddenHttpMethodFilter'
+2020-02-12 15:58:58.902 [ restartedMain ] - [ DEBUG ] [ org.apache.shiro.spring.web.ShiroFilterFactoryBean : 501 ] - Found filter chain candidate filter 'formContentFilter'
+2020-02-12 15:58:58.909 [ restartedMain ] - [ DEBUG ] [ org.apache.shiro.spring.web.ShiroFilterFactoryBean : 501 ] - Found filter chain candidate filter 'characterEncodingFilter'
+2020-02-12 15:58:59.176 [ restartedMain ] - [ DEBUG ] [ com.github.tobato.fastdfs.conn.ConnectionManager : 46 ] - init trackerLocator [39.98.163.208:22122]
+2020-02-12 15:58:59.267 [ restartedMain ] - [ DEBUG ] [ o.h.v.i.engine.resolver.TraversableResolvers : 60 ] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-02-12 15:58:59.268 [ restartedMain ] - [ DEBUG ] [ o.h.v.m.ResourceBundleMessageInterpolator : 89 ] - Loaded expression factory via original TCCL
+2020-02-12 15:58:59.272 [ restartedMain ] - [ DEBUG ] [ o.h.v.i.engine.resolver.TraversableResolvers : 60 ] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-02-12 15:58:59.273 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ConfigurationImpl : 148 ] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-02-12 15:58:59.274 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ConfigurationImpl : 180 ] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-02-12 15:58:59.275 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ConfigurationImpl : 194 ] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-02-12 15:58:59.277 [ restartedMain ] - [ DEBUG ] [ o.h.v.internal.xml.config.ValidationXmlParser : 120 ] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-02-12 15:58:59.278 [ restartedMain ] - [ DEBUG ] [ o.h.v.internal.xml.config.ResourceLoaderHelper : 53 ] - Trying to load META-INF/validation.xml via user class loader
+2020-02-12 15:58:59.278 [ restartedMain ] - [ DEBUG ] [ o.h.v.internal.xml.config.ResourceLoaderHelper : 60 ] - Trying to load META-INF/validation.xml via TCCL
+2020-02-12 15:58:59.279 [ restartedMain ] - [ DEBUG ] [ o.h.v.internal.xml.config.ResourceLoaderHelper : 66 ] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-02-12 15:58:59.280 [ restartedMain ] - [ DEBUG ] [ o.h.v.internal.xml.config.ValidationXmlParser : 127 ] - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-02-12 15:58:59.284 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ValidatorFactoryImpl : 578 ] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-02-12 15:58:59.285 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ValidatorFactoryImpl : 579 ] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-02-12 15:58:59.285 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ValidatorFactoryImpl : 580 ] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-02-12 15:58:59.285 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ValidatorFactoryImpl : 581 ] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-02-12 15:58:59.286 [ restartedMain ] - [ DEBUG ] [ o.h.validator.internal.engine.ValidatorFactoryImpl : 582 ] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-02-12 15:59:00.331 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-12 15:59:00.372 [ restartedMain ] - [ INFO  ] [ com.ynet.fullview.FullviewApplication : 59 ] - Started FullviewApplication in 6.173 seconds (JVM running for 7.534)
+2020-02-12 15:59:55.476 [ http-nio-8088-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/bishe] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-12 15:59:55.556 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:59:55.563 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26ee20af] was not registered for synchronization because synchronization is not active
+2020-02-12 15:59:55.634 [ http-nio-8088-exec-1 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 930 ] - {dataSource-1} inited
+2020-02-12 15:59:56.568 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2ca19dc1] will not be managed by Spring
+2020-02-12 15:59:56.571 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:59:56.590 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:59:56.698 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:59:56.700 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26ee20af]
+2020-02-12 15:59:56.927 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:59:56.927 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e248e59] was not registered for synchronization because synchronization is not active
+2020-02-12 15:59:56.928 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2ca19dc1] will not be managed by Spring
+2020-02-12 15:59:56.928 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 15:59:56.928 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 15:59:57.021 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 15:59:57.023 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e248e59]
+2020-02-12 15:59:59.705 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 15:59:59.706 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c7fb5a5] was not registered for synchronization because synchronization is not active
+2020-02-12 15:59:59.708 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2ca19dc1] will not be managed by Spring
+2020-02-12 15:59:59.709 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 15:59:59.710 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 05dc248bc59b44d4a00b33b732ad3eb6(String)
+2020-02-12 15:59:59.796 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 15:59:59.798 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c7fb5a5]
+2020-02-12 16:00:02.024 [ http-nio-8088-exec-4 ] - [ INFO  ] [ c.y.f.c.u.UploadAndDownloadController : 44 ] - 下载文件名：hello.txt
+2020-02-12 16:00:02.543 [ http-nio-8088-exec-4 ] - [ ERROR ] [ c.y.f.s.U.UploadAndDownloadByDirectServiceImpl : 82 ] - 下载文件没有找到
+2020-02-12 16:00:02.555 [ http-nio-8088-exec-4 ] - [ INFO  ] [ com.ynet.fullview.exception.MyExceptionHandler : 24 ] - 业务异常:{}
+com.ynet.fullview.exception.ActionException: null
+	at com.ynet.fullview.service.UploadAndDownloadServiceImpl.UploadAndDownloadByDirectServiceImpl.download(UploadAndDownloadByDirectServiceImpl.java:83)
+	at com.ynet.fullview.controller.uploadAnddownloadController.UploadAndDownloadController.download(UploadAndDownloadController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-02-12 16:02:22.576 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:02:22.577 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33fd26e9] was not registered for synchronization because synchronization is not active
+2020-02-12 16:02:22.666 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2ca19dc1] will not be managed by Spring
+2020-02-12 16:02:22.667 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 16:02:22.667 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 16:02:22.753 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 16:02:22.754 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33fd26e9]
+2020-02-12 16:02:22.893 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:02:22.894 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71609c95] was not registered for synchronization because synchronization is not active
+2020-02-12 16:02:22.894 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2ca19dc1] will not be managed by Spring
+2020-02-12 16:02:22.894 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 16:02:22.895 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 16:02:22.983 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 16:02:22.984 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71609c95]
+2020-02-12 16:02:25.646 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:02:25.647 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dfcdc37] was not registered for synchronization because synchronization is not active
+2020-02-12 16:02:25.649 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2ca19dc1] will not be managed by Spring
+2020-02-12 16:02:25.651 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 16:02:25.652 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 05dc248bc59b44d4a00b33b732ad3eb6(String)
+2020-02-12 16:02:25.744 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 16:02:25.745 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dfcdc37]
+2020-02-12 16:02:28.279 [ http-nio-8088-exec-10 ] - [ INFO  ] [ c.y.f.c.u.UploadAndDownloadController : 44 ] - 下载文件名：hello.txt
+2020-02-12 16:02:28.280 [ http-nio-8088-exec-10 ] - [ ERROR ] [ c.y.f.s.U.UploadAndDownloadByDirectServiceImpl : 82 ] - 下载文件没有找到
+2020-02-12 16:02:28.282 [ http-nio-8088-exec-10 ] - [ INFO  ] [ com.ynet.fullview.exception.MyExceptionHandler : 24 ] - 业务异常:{}
+com.ynet.fullview.exception.ActionException: null
+	at com.ynet.fullview.service.UploadAndDownloadServiceImpl.UploadAndDownloadByDirectServiceImpl.download(UploadAndDownloadByDirectServiceImpl.java:83)
+	at com.ynet.fullview.controller.uploadAnddownloadController.UploadAndDownloadController.download(UploadAndDownloadController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-02-12 16:02:36.347 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:02:36.348 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d8c3c30] was not registered for synchronization because synchronization is not active
+2020-02-12 16:02:36.349 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2ca19dc1] will not be managed by Spring
+2020-02-12 16:02:36.349 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 16:02:36.350 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 16:02:36.435 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 16:02:36.436 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d8c3c30]
+2020-02-12 16:02:36.491 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:02:36.491 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45e4f24] was not registered for synchronization because synchronization is not active
+2020-02-12 16:02:36.492 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2ca19dc1] will not be managed by Spring
+2020-02-12 16:02:36.492 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 16:02:36.492 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 16:02:36.581 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 16:02:36.582 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45e4f24]
+2020-02-12 16:11:45.267 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:11:45.268 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28bfb96e] was not registered for synchronization because synchronization is not active
+2020-02-12 16:11:45.268 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:11:45.268 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@603a2555] was not registered for synchronization because synchronization is not active
+2020-02-12 16:11:46.157 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:11:46.161 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 16:11:46.164 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 16:11:46.264 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 16:11:46.266 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@603a2555]
+2020-02-12 16:11:46.292 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ com.alibaba.druid.pool.DruidDataSource : 1302 ] - skip not validate connection.
+2020-02-12 16:11:46.296 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:11:46.298 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 16:11:46.301 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 16:11:46.396 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 16:11:46.397 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28bfb96e]
+2020-02-12 16:11:49.219 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:11:49.220 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15c7e72] was not registered for synchronization because synchronization is not active
+2020-02-12 16:11:49.221 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:11:49.221 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 16:11:49.222 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 16:11:49.399 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 16:11:49.399 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15c7e72]
+2020-02-12 16:11:49.497 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:11:49.497 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b98f7e5] was not registered for synchronization because synchronization is not active
+2020-02-12 16:11:49.498 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:11:49.498 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 16:11:49.499 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 16:11:49.581 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 16:11:49.582 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b98f7e5]
+2020-02-12 16:11:52.330 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:11:52.331 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2704b747] was not registered for synchronization because synchronization is not active
+2020-02-12 16:11:52.334 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:11:52.335 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where id=? 
+2020-02-12 16:11:52.336 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - ==> Parameters: 05dc248bc59b44d4a00b33b732ad3eb6(String)
+2020-02-12 16:11:52.416 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.y.fullview.dao.CustomerMapper.queryOrderDeatil : 159 ] - <==      Total: 1
+2020-02-12 16:11:52.418 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2704b747]
+2020-02-12 16:11:54.154 [ http-nio-8088-exec-10 ] - [ INFO  ] [ c.y.f.c.u.UploadAndDownloadController : 44 ] - 下载文件名：hello.txt
+2020-02-12 16:12:31.461 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:12:31.462 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43dccb20] was not registered for synchronization because synchronization is not active
+2020-02-12 16:12:31.464 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:12:31.466 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==>  Preparing: select id,projectName,technology,serviceQQ,paperTitle,docPath,docName,imagePath,remarks from inorder join annex on orderId=id where not exists (select orderId from outorder where orderId=id) 
+2020-02-12 16:12:31.468 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - ==> Parameters: 
+2020-02-12 16:12:31.552 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.CustomerMapper.queryOrderInfo : 159 ] - <==      Total: 14
+2020-02-12 16:12:31.554 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43dccb20]
+2020-02-12 16:12:51.889 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:12:51.891 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7810dbef] was not registered for synchronization because synchronization is not active
+2020-02-12 16:12:51.893 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:12:51.894 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.y.fullview.dao.SysUserMapper.queryUserByUserName : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser where username=? 
+2020-02-12 16:12:51.896 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.y.fullview.dao.SysUserMapper.queryUserByUserName : 159 ] - ==> Parameters: admin(String)
+2020-02-12 16:12:51.975 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.y.fullview.dao.SysUserMapper.queryUserByUserName : 159 ] - <==      Total: 0
+2020-02-12 16:12:51.977 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7810dbef]
+2020-02-12 16:12:51.980 [ http-nio-8088-exec-3 ] - [ INFO  ] [ com.ynet.fullview.exception.MyExceptionHandler : 24 ] - 业务异常:{}
+com.ynet.fullview.exception.ActionException: null
+	at com.ynet.fullview.service.userserviceImpl.UserServiceImpl.signIn(UserServiceImpl.java:31)
+	at com.ynet.fullview.controller.userController.UserController.userSignIn(UserController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-02-12 16:13:02.562 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:13:02.565 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ea54510] was not registered for synchronization because synchronization is not active
+2020-02-12 16:13:02.569 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:13:02.571 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.y.fullview.dao.SysUserMapper.queryUserByUserName : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser where username=? 
+2020-02-12 16:13:02.573 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.y.fullview.dao.SysUserMapper.queryUserByUserName : 159 ] - ==> Parameters: admin132(String)
+2020-02-12 16:13:02.656 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.y.fullview.dao.SysUserMapper.queryUserByUserName : 159 ] - <==      Total: 1
+2020-02-12 16:13:02.661 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ea54510]
+2020-02-12 16:13:08.874 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:13:08.875 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b7e3981] was not registered for synchronization because synchronization is not active
+2020-02-12 16:13:08.877 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:13:08.877 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser 
+2020-02-12 16:13:08.879 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==> Parameters: 
+2020-02-12 16:13:08.960 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - <==      Total: 5
+2020-02-12 16:13:08.961 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b7e3981]
+2020-02-12 16:13:14.228 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:13:14.229 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1866c30b] was not registered for synchronization because synchronization is not active
+2020-02-12 16:13:14.233 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:13:14.234 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==>  Preparing: select id, shop, wantName,projectName, technology, io.orderDate,paperTitle,programName,paperName,io.projectProcess from inorder io left join outorder on id=orderId where io.projectProcess!='3' OR io.projectProcess is null 
+2020-02-12 16:13:14.235 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==> Parameters: 
+2020-02-12 16:13:14.319 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - <==      Total: 15
+2020-02-12 16:13:14.321 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1866c30b]
+2020-02-12 16:13:14.677 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:13:14.677 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b6bc180] was not registered for synchronization because synchronization is not active
+2020-02-12 16:13:14.678 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:13:14.678 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==>  Preparing: select id,projectName, flowNo,programName,price,tel,flow.qq,flow.orderDate from inorder join acceptorderflow flow on id = orderId 
+2020-02-12 16:13:14.679 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==> Parameters: 
+2020-02-12 16:13:14.760 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - <==      Total: 2
+2020-02-12 16:13:14.762 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b6bc180]
+2020-02-12 16:13:16.202 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:13:16.204 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29d048d0] was not registered for synchronization because synchronization is not active
+2020-02-12 16:13:16.205 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:13:16.206 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:13:16.208 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser 
+2020-02-12 16:13:16.208 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52dcc4f2] was not registered for synchronization because synchronization is not active
+2020-02-12 16:13:16.209 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==> Parameters: 
+2020-02-12 16:13:16.289 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - <==      Total: 5
+2020-02-12 16:13:16.292 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29d048d0]
+2020-02-12 16:13:16.320 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:13:16.320 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - ==>  Preparing: select id, name from classify 
+2020-02-12 16:13:16.322 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - ==> Parameters: 
+2020-02-12 16:13:16.416 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - <==      Total: 11
+2020-02-12 16:13:16.418 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52dcc4f2]
+2020-02-12 16:14:47.468 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:14:47.470 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7856c216] was not registered for synchronization because synchronization is not active
+2020-02-12 16:14:47.789 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:14:47.790 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser 
+2020-02-12 16:14:47.791 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==> Parameters: 
+2020-02-12 16:14:47.886 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - <==      Total: 5
+2020-02-12 16:14:47.888 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7856c216]
+2020-02-12 16:14:52.610 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:14:52.611 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@179c79e7] was not registered for synchronization because synchronization is not active
+2020-02-12 16:14:52.611 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:14:52.611 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==>  Preparing: select id, shop, wantName,projectName, technology, io.orderDate,paperTitle,programName,paperName,io.projectProcess from inorder io left join outorder on id=orderId where io.projectProcess!='3' OR io.projectProcess is null 
+2020-02-12 16:14:52.612 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==> Parameters: 
+2020-02-12 16:14:52.709 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - <==      Total: 15
+2020-02-12 16:14:52.712 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@179c79e7]
+2020-02-12 16:15:01.165 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:15:01.167 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a4645c4] was not registered for synchronization because synchronization is not active
+2020-02-12 16:15:01.169 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:15:01.170 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==>  Preparing: select id,projectName, flowNo,programName,price,tel,flow.qq,flow.orderDate from inorder join acceptorderflow flow on id = orderId 
+2020-02-12 16:15:01.171 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==> Parameters: 
+2020-02-12 16:15:01.263 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - <==      Total: 2
+2020-02-12 16:15:01.265 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a4645c4]
+2020-02-12 16:15:02.434 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:15:02.435 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65b5faa1] was not registered for synchronization because synchronization is not active
+2020-02-12 16:15:02.436 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:15:02.436 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser 
+2020-02-12 16:15:02.437 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==> Parameters: 
+2020-02-12 16:15:02.528 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - <==      Total: 5
+2020-02-12 16:15:02.530 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65b5faa1]
+2020-02-12 16:15:02.745 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:15:02.746 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3543c611] was not registered for synchronization because synchronization is not active
+2020-02-12 16:15:02.748 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:15:02.748 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - ==>  Preparing: select id, name from classify 
+2020-02-12 16:15:02.750 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - ==> Parameters: 
+2020-02-12 16:15:02.843 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - <==      Total: 11
+2020-02-12 16:15:02.845 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3543c611]
+2020-02-12 16:15:11.567 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:15:11.568 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e16f69f] was not registered for synchronization because synchronization is not active
+2020-02-12 16:15:11.571 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:15:11.572 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser 
+2020-02-12 16:15:11.573 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==> Parameters: 
+2020-02-12 16:15:11.665 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - <==      Total: 5
+2020-02-12 16:15:11.667 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e16f69f]
+2020-02-12 16:15:53.659 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:15:53.661 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59cb52fd] was not registered for synchronization because synchronization is not active
+2020-02-12 16:15:53.662 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:15:53.663 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==>  Preparing: select id, shop, wantName,projectName, technology, io.orderDate,paperTitle,programName,paperName,io.projectProcess from inorder io left join outorder on id=orderId where io.projectProcess!='3' OR io.projectProcess is null 
+2020-02-12 16:15:53.664 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==> Parameters: 
+2020-02-12 16:15:53.759 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - <==      Total: 15
+2020-02-12 16:15:53.761 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59cb52fd]
+2020-02-12 16:15:58.473 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:15:58.474 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5eb599bd] was not registered for synchronization because synchronization is not active
+2020-02-12 16:15:58.475 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:15:58.476 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==>  Preparing: select id,projectName, flowNo,programName,price,tel,flow.qq,flow.orderDate from inorder join acceptorderflow flow on id = orderId 
+2020-02-12 16:15:58.477 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==> Parameters: 
+2020-02-12 16:15:58.569 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - <==      Total: 2
+2020-02-12 16:15:58.571 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5eb599bd]
+2020-02-12 16:16:07.314 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:16:07.314 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:16:07.315 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51929548] was not registered for synchronization because synchronization is not active
+2020-02-12 16:16:07.315 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a6adfb] was not registered for synchronization because synchronization is not active
+2020-02-12 16:16:07.317 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:16:07.318 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - ==>  Preparing: select id, name from classify 
+2020-02-12 16:16:07.319 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - ==> Parameters: 
+2020-02-12 16:16:07.408 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:16:07.410 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser 
+2020-02-12 16:16:07.412 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==> Parameters: 
+2020-02-12 16:16:07.412 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - <==      Total: 11
+2020-02-12 16:16:07.414 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a6adfb]
+2020-02-12 16:16:07.491 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - <==      Total: 5
+2020-02-12 16:16:07.492 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51929548]
+2020-02-12 16:16:31.144 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:16:31.145 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11a3b153] was not registered for synchronization because synchronization is not active
+2020-02-12 16:16:31.147 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:16:31.149 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==>  Preparing: select id, shop, wantName,projectName, technology, io.orderDate,paperTitle,programName,paperName,io.projectProcess from inorder io left join outorder on id=orderId where io.projectProcess!='3' OR io.projectProcess is null 
+2020-02-12 16:16:31.150 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==> Parameters: 
+2020-02-12 16:16:31.231 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - <==      Total: 15
+2020-02-12 16:16:31.234 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11a3b153]
+2020-02-12 16:16:37.589 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:16:37.590 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22ad7734] was not registered for synchronization because synchronization is not active
+2020-02-12 16:16:37.591 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:16:37.592 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==>  Preparing: select id,projectName, flowNo,programName,price,tel,flow.qq,flow.orderDate from inorder join acceptorderflow flow on id = orderId 
+2020-02-12 16:16:37.592 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==> Parameters: 
+2020-02-12 16:16:37.672 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - <==      Total: 2
+2020-02-12 16:16:37.673 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22ad7734]
+2020-02-12 16:16:39.073 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:16:39.072 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:16:39.074 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eebf69d] was not registered for synchronization because synchronization is not active
+2020-02-12 16:16:39.074 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1225a217] was not registered for synchronization because synchronization is not active
+2020-02-12 16:16:39.076 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42eed711] will not be managed by Spring
+2020-02-12 16:16:39.077 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:16:39.078 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - ==>  Preparing: select id, name from classify 
+2020-02-12 16:16:39.078 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser 
+2020-02-12 16:16:39.079 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - ==> Parameters: 
+2020-02-12 16:16:39.079 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==> Parameters: 
+2020-02-12 16:16:39.157 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - <==      Total: 11
+2020-02-12 16:16:39.159 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1225a217]
+2020-02-12 16:16:39.170 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - <==      Total: 5
+2020-02-12 16:16:39.171 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eebf69d]
+2020-02-12 16:16:52.513 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:16:52.515 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21963299] was not registered for synchronization because synchronization is not active
+2020-02-12 16:16:52.516 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:16:52.517 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==>  Preparing: select id, shop, wantName,projectName, technology, io.orderDate,paperTitle,programName,paperName,io.projectProcess from inorder io left join outorder on id=orderId where io.projectProcess!='3' OR io.projectProcess is null 
+2020-02-12 16:16:52.518 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==> Parameters: 
+2020-02-12 16:16:52.612 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - <==      Total: 15
+2020-02-12 16:16:52.614 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21963299]
+2020-02-12 16:16:59.896 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:16:59.898 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5902e13a] was not registered for synchronization because synchronization is not active
+2020-02-12 16:16:59.900 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:16:59.901 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser 
+2020-02-12 16:16:59.903 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==> Parameters: 
+2020-02-12 16:17:00.511 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - <==      Total: 5
+2020-02-12 16:17:00.513 [ http-nio-8088-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5902e13a]
+2020-02-12 16:17:04.408 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:17:04.410 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d3dda68] was not registered for synchronization because synchronization is not active
+2020-02-12 16:17:04.412 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:17:04.413 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser 
+2020-02-12 16:17:04.414 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==> Parameters: 
+2020-02-12 16:17:04.506 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - <==      Total: 5
+2020-02-12 16:17:04.508 [ http-nio-8088-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d3dda68]
+2020-02-12 16:18:12.327 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:18:12.329 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35bf967f] was not registered for synchronization because synchronization is not active
+2020-02-12 16:18:12.431 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:18:12.432 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==>  Preparing: select id, shop, wantName,projectName, technology, io.orderDate,paperTitle,programName,paperName,io.projectProcess from inorder io left join outorder on id=orderId where io.projectProcess!='3' OR io.projectProcess is null 
+2020-02-12 16:18:12.434 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==> Parameters: 
+2020-02-12 16:18:12.526 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - <==      Total: 15
+2020-02-12 16:18:12.528 [ http-nio-8088-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35bf967f]
+2020-02-12 16:18:13.649 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:18:13.651 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fdcccf] was not registered for synchronization because synchronization is not active
+2020-02-12 16:18:13.652 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:18:13.653 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==>  Preparing: select id,projectName, flowNo,programName,price,tel,flow.qq,flow.orderDate from inorder join acceptorderflow flow on id = orderId 
+2020-02-12 16:18:13.653 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==> Parameters: 
+2020-02-12 16:18:13.748 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - <==      Total: 2
+2020-02-12 16:18:13.749 [ http-nio-8088-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fdcccf]
+2020-02-12 16:18:15.224 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:18:15.226 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29148cd1] was not registered for synchronization because synchronization is not active
+2020-02-12 16:18:15.227 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6efdc722] will not be managed by Spring
+2020-02-12 16:18:15.228 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==>  Preparing: select id, shop, wantName,projectName, technology, io.orderDate,paperTitle,programName,paperName,io.projectProcess from inorder io left join outorder on id=orderId where io.projectProcess!='3' OR io.projectProcess is null 
+2020-02-12 16:18:15.230 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==> Parameters: 
+2020-02-12 16:18:15.323 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - <==      Total: 15
+2020-02-12 16:18:15.326 [ http-nio-8088-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29148cd1]
+2020-02-12 16:23:24.656 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:23:24.658 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@116d11da] was not registered for synchronization because synchronization is not active
+2020-02-12 16:23:25.664 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ com.alibaba.druid.pool.DruidDataSource : 1302 ] - skip not validate connection.
+2020-02-12 16:23:26.671 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ com.alibaba.druid.pool.DruidDataSource : 1302 ] - skip not validate connection.
+2020-02-12 16:23:26.673 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@18cf79a8] will not be managed by Spring
+2020-02-12 16:23:26.675 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.y.fullview.dao.SysUserMapper.queryUserByUserName : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser where username=? 
+2020-02-12 16:23:26.676 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.y.fullview.dao.SysUserMapper.queryUserByUserName : 159 ] - ==> Parameters: admin132(String)
+2020-02-12 16:23:26.768 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ c.y.fullview.dao.SysUserMapper.queryUserByUserName : 159 ] - <==      Total: 1
+2020-02-12 16:23:26.770 [ http-nio-8088-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@116d11da]
+2020-02-12 16:23:31.194 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:23:31.195 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8b9653d] was not registered for synchronization because synchronization is not active
+2020-02-12 16:23:31.197 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dccf38e] will not be managed by Spring
+2020-02-12 16:23:31.198 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==>  Preparing: select id, shop, wantName,projectName, technology, io.orderDate,paperTitle,programName,paperName,io.projectProcess from inorder io left join outorder on id=orderId where io.projectProcess!='3' OR io.projectProcess is null 
+2020-02-12 16:23:31.199 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - ==> Parameters: 
+2020-02-12 16:23:31.284 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ c.ynet.fullview.dao.ManageOrderMapper.queryInOrder : 159 ] - <==      Total: 15
+2020-02-12 16:23:31.285 [ http-nio-8088-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8b9653d]
+2020-02-12 16:27:01.739 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:27:01.741 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@789da94] was not registered for synchronization because synchronization is not active
+2020-02-12 16:27:02.117 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dccf38e] will not be managed by Spring
+2020-02-12 16:27:02.118 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==>  Preparing: select id,projectName, flowNo,programName,price,tel,flow.qq,flow.orderDate from inorder join acceptorderflow flow on id = orderId 
+2020-02-12 16:27:02.119 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - ==> Parameters: 
+2020-02-12 16:27:02.199 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ c.y.fullview.dao.ManageOrderMapper.queryAcceptFlow : 159 ] - <==      Total: 2
+2020-02-12 16:27:02.201 [ http-nio-8088-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@789da94]
+2020-02-12 16:27:08.484 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:27:08.485 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@250a6394] was not registered for synchronization because synchronization is not active
+2020-02-12 16:27:08.486 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dccf38e] will not be managed by Spring
+2020-02-12 16:27:08.486 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==>  Preparing: select id, username, name, password, qq, tel from sysuser 
+2020-02-12 16:27:08.487 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - ==> Parameters: 
+2020-02-12 16:27:08.565 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ com.ynet.fullview.dao.SysUserMapper.queryUsers : 159 ] - <==      Total: 5
+2020-02-12 16:27:08.567 [ http-nio-8088-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@250a6394]
+2020-02-12 16:27:08.797 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 97 ] - Creating a new SqlSession
+2020-02-12 16:27:08.798 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 148 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a4dc019] was not registered for synchronization because synchronization is not active
+2020-02-12 16:27:08.799 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 87 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dccf38e] will not be managed by Spring
+2020-02-12 16:27:08.800 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - ==>  Preparing: select id, name from classify 
+2020-02-12 16:27:08.801 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - ==> Parameters: 
+2020-02-12 16:27:08.879 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ com.ynet.fullview.dao.ClassifyMapper.queryClassify : 159 ] - <==      Total: 11
+2020-02-12 16:27:08.881 [ http-nio-8088-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 191 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a4dc019]

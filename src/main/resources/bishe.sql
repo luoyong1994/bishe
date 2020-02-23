@@ -30,7 +30,7 @@ create TABLE role_source(
 	sourceId INT NOT NULL comment '资源id'
 )ENGINE=INNODB DEFAULT CHARSET=utf8;
 
---这也就是菜单表
+#这也就是菜单表
 create TABLE resource(
 	id INT NOT NULL PRIMARY KEY  comment '资源id',
 	Name VARCHAR(40) NOT NULL comment '资源名字',
@@ -40,8 +40,9 @@ create TABLE resource(
 	sort int(2) NOT NULL comment '资源序号'
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8;
 
---待扩展就是权限表，更加细粒度的控制
+#待扩展就是权限表，更加细粒度的控制
 
+#店铺订单信息添加表
 create table inorder(
   id varchar(50) NOT NULL PRIMARY KEY  comment '项目编号',
   shop varchar(50) comment '店铺',
@@ -53,10 +54,14 @@ create table inorder(
   orderDate varchar(14) comment '接单时间',
   totalAmt decimal(10,3) comment '项目总金额',
   bookAmt decimal(10,3) comment '项目定金',
-  projectProcess varchar(2) comment '结账: 1-开发结账,2-论文结账,3-完成',
+  projectProcess varchar(2) comment '外包结账: 1-开发结账,2-论文结账,3-外包结账完成',
   programAmt decimal(10,3) comment '程序金额',
   paperTitle varchar(200) comment '论文题目',
-  paperAmt  decimal(10,3) comment '论文金额'
+  paperAmt  decimal(10,3) comment '论文金额',
+  orderBillStatue varchar(1) comment '订单结账状态：0-订单未结账，1-订单已结账',
+  programBillDate  varchar(50) comment '技术结账时间',
+  parperBillDate varchar(50) comment  '论文结账时间',
+  comcustBillDate varchar(50) comment '客户结账时间'
 ) ENGINE=INNODB DEFAULT CHARSET=utf8;
 # 附件目录
 create table annex(
@@ -67,6 +72,7 @@ create table annex(
   remarks varchar(500) comment '备注'
 )ENGINE=INNODB  DEFAULT CHARSET=utf8;
 
+#订单派送情况统计表
 create table  outorder(
   orderId varchar(50) not null primary key comment '项目编号',
   totalAmt decimal(10,3) comment '项目总价',
@@ -75,9 +81,11 @@ create table  outorder(
   programname varchar(100) comment '程序技术姓名',
   papername varchar(100) comment '论文技术姓名',
   tel varchar(11) comment '技术电话',
-  projectProcess varchar(2) comment '项目进度:0-未接单，1-开发中，2-开发完成',
+  projectProcess varchar(2) comment '流水接单，项目进度:0-未接单，1-开发中，2-开发完成',
   orderDate varchar(20) comment '接单时间',
-  qq varchar(50) comment '技术qq'
+  qq varchar(50) comment '技术qq',
+  papertel varchar(11) comment '论文技术电话',
+  paperqq varchar(50) comment '论文技术qq'
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8;
 # 分类
 create table classify(

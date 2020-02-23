@@ -1,6 +1,7 @@
 package com.ynet.fullview.authoritymanage.config;
 
 import com.ynet.fullview.authoritymanage.shiro.CustomRealm;
+import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -29,6 +30,17 @@ public class ShiroConfig {
         DefaultAdvisorAutoProxyCreator defaultAAP = new DefaultAdvisorAutoProxyCreator();
         defaultAAP.setProxyTargetClass(true);
         return defaultAAP;
+    }
+
+    @Bean
+    public HashedCredentialsMatcher hashedCredentialsMatcher(){
+        HashedCredentialsMatcher hashedCredentialsMatcher = new HashedCredentialsMatcher();
+        //设置加密算法类型
+        hashedCredentialsMatcher.setHashAlgorithmName("md5");
+        //设置散列得次数
+        hashedCredentialsMatcher.setHashIterations(4);
+
+        return hashedCredentialsMatcher;
     }
 
     //将自己的验证方式加入容器

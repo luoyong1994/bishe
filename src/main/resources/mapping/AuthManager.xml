@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.ynet.fullview.dao.AuthManagerMapper">
 
-    <select id="queryAuthorityInfo" resultMap="java.util.Map" parameterType="com.ynet.fullview.model.SysUser">
+    <select id="queryAuthorityInfo"  resultType="java.util.Map" parameterType="com.ynet.fullview.model.SysUser">
         select
             user.username userName,user.name name,user.password passWord,user.qq qq,user.tel tel,user.random random,
             role.roleName roleName,role.roleDesc roleDesc,

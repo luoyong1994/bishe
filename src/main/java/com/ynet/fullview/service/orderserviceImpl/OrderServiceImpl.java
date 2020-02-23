@@ -22,6 +22,7 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private OutOrderMapper outOrderMapper;
 
+    //附件信息
     @Autowired
     private AnnexMapper annexMapper;
 

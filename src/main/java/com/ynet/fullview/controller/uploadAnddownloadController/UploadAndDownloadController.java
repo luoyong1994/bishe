@@ -2,6 +2,8 @@ package com.ynet.fullview.controller.uploadAnddownloadController;
 import com.ynet.fullview.service.uploadservice.UploadAndDownloadByDirectService;
 import com.ynet.fullview.service.uploadservice.UploadAndDownloadService;
 import com.ynet.fullview.util.JsonResult;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +21,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/file/")
+@Slf4j
 public class UploadAndDownloadController {
 
     @Autowired
@@ -35,9 +38,10 @@ public class UploadAndDownloadController {
     }
 
 
-    @PostMapping("download.do")
+    @RequestMapping("download.do")
     public void download(String fileName, HttpServletResponse response) throws UnsupportedEncodingException {
 //        uploadAndDownloadService.download(url,fileName,response);
+        log.info("下载文件名：{}",fileName);
         uploadAndDownloadService.download(fileName,response);
     }
 

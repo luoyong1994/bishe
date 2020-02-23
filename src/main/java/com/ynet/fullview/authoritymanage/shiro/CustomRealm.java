@@ -1,13 +1,11 @@
 package com.ynet.fullview.authoritymanage.shiro;
 
-import com.ynet.fullview.authoritymanage.bean.Permissions;
-import com.ynet.fullview.authoritymanage.bean.Role;
 import com.ynet.fullview.authoritymanage.service.LoginService;
 import com.ynet.fullview.dao.AuthManagerMapper;
-import com.ynet.fullview.dao.SysRoleMapper;
 import com.ynet.fullview.dao.SysUserMapper;
 import com.ynet.fullview.exception.ActionException;
 import com.ynet.fullview.model.SysUser;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -16,9 +14,13 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -28,6 +30,7 @@ import java.util.*;
  * Time: 23:25
  * Description: No Description
  */
+@Slf4j
 public class CustomRealm extends AuthorizingRealm {
 
     @Autowired
@@ -37,10 +40,9 @@ public class CustomRealm extends AuthorizingRealm {
     private SysUserMapper sysUserMapper;
 
     @Autowired
-    private SysRoleMapper sysRoleMapper;
-
-    @Autowired
     private AuthManagerMapper authManagerMapper;
+
+
 
 
     /**
@@ -118,7 +120,12 @@ public class CustomRealm extends AuthorizingRealm {
             throw new ActionException("用户名密码错误");
         } else {
             //创建认证器，供shiro认证使用
-            SimpleAuthenticationInfo simpleAuthenticationInfo = new SimpleAuthenticationInfo(userName, sysUser1.getPassword(), getName());
+            //盐
+            String rand = sysUser1.getRandom();
+            ByteSource bytes = ByteSource.Util.bytes(rand);
+            String realmName = this.getName();
+            log.info("服务器保存密码为：{}",sysUser1.getPassword());
+            SimpleAuthenticationInfo simpleAuthenticationInfo = new SimpleAuthenticationInfo(userName, sysUser1.getPassword(), bytes,getName());
             return simpleAuthenticationInfo;
         }
     }

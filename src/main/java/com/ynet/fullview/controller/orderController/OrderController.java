@@ -3,6 +3,7 @@ package com.ynet.fullview.controller.orderController;
 import com.ynet.fullview.model.OrderInfo;
 import com.ynet.fullview.service.orderservice.OrderService;
 import com.ynet.fullview.util.JsonResult;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/order/")
+@Slf4j
 public class OrderController {
 
     @Autowired
@@ -17,7 +19,7 @@ public class OrderController {
 
     @PostMapping("add.do")
     public JsonResult addOrder(OrderInfo orderInfo){
-        System.out.println(orderInfo);
+        log.info("添加的订单信息：{}",orderInfo.toString());
         orderService.addOrder(orderInfo);
         return new JsonResult();
     }

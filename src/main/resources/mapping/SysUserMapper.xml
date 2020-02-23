@@ -1,37 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ynet.fullview.dao.SysUserMapper">
-  <resultMap id="BaseResultMap" type="com.ynet.fullview.model.SysUser">
-    <id column="id" jdbcType="VARCHAR" property="id" />
-    <result column="username" jdbcType="VARCHAR" property="username" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="qq" jdbcType="VARCHAR" property="qq" />
-    <result column="tel" jdbcType="VARCHAR" property="tel" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    id, username, name, password, qq, tel
+    <resultMap id="BaseResultMap" type="com.ynet.fullview.model.SysUser">
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="qq" jdbcType="VARCHAR" property="qq"/>
+        <result column="tel" jdbcType="VARCHAR" property="tel"/>
+        <result column="random" jdbcType="VARCHAR" property="random"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, username, name, password, qq, tel,random
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from sysuser
-    where id = #{id,jdbcType=VARCHAR}
-  </select>
-  
-  <insert id="addUser" parameterType="com.ynet.fullview.model.SysUser">
+    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sysuser
+        where id = #{id,jdbcType=VARCHAR}
+    </select>
+
+    <insert id="addUser" parameterType="com.ynet.fullview.model.SysUser">
       insert into sysuser(id,username,name,password,qq,tel,random) values (#{id},#{username},#{name},#{password},#{qq},#{tel},#{random})
   </insert>
-  
-  <select id="queryUsers" parameterType="com.ynet.fullview.model.SysUser" resultType="com.ynet.fullview.model.SysUser">
-      select <include refid="Base_Column_List"/> from   sysuser
-    <if test="id!=null">
-      where id=#{id}
-    </if>
-  </select>
 
-  <select id="queryUserByUserName" parameterType="com.ynet.fullview.model.SysUser" resultType="com.ynet.fullview.model.SysUser">
-      select <include refid="Base_Column_List"/> from sysuser where username=#{username}
-  </select>
+    <select id="queryUsers" parameterType="com.ynet.fullview.model.SysUser"
+            resultType="com.ynet.fullview.model.SysUser">
+        select
+        <include refid="Base_Column_List"/>
+        from sysuser
+        <if test="id!=null">
+            where id=#{id}
+        </if>
+    </select>
+
+    <select id="queryUserByUserName" parameterType="com.ynet.fullview.model.SysUser"
+            resultType="com.ynet.fullview.model.SysUser">
+        select
+        <include refid="Base_Column_List"/>
+        from sysuser where username=#{username}
+    </select>
+
+    <delete id="deleteUserById" parameterType="com.ynet.fullview.model.SysUser">
+      delete from sysuser where id=#{id}
+  </delete>
+
+    <update id="updateUserById" parameterType="com.ynet.fullview.model.SysUser">
+        update sysuser
+        <set>
+            <if test="username!=null">
+                username=#{username}
+            </if>
+            <if test="name!=null">
+                name=#{name}
+            </if>
+            <if test="password!=null">
+                password=#{password}
+            </if>
+            <if test="qq!=null">
+                qq=#{qq}
+            </if>
+            <if test="tel!=null">
+                tel=#{tel}
+            </if>
+        </set>
+        where id=#{id}
+    </update>
 
 </mapper>

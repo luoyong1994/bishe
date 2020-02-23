@@ -48,7 +48,7 @@ public class UploadAndDownloadByDirectServiceImpl implements UploadAndDownloadBy
                 fileId = IDUtil.generaryId();
                 String fileName = file.getOriginalFilename();
                 String fileSuffix = fileName.substring(fileName.lastIndexOf("."));
-                FileOutputStream fileOutputStream = new FileOutputStream(PATH + "/" + fileId + "." + fileSuffix);
+                FileOutputStream fileOutputStream = new FileOutputStream(PATH + "/" + fileId + fileSuffix);
                 IOUtils.copy(inputStream, fileOutputStream);
                 fileOutputStream.flush();
                 fileOutputStream.close();

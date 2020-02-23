@@ -11,4 +11,8 @@ public interface SysUserMapper {
     void addUser(SysUser sysUser);
     List<SysUser> queryUsers(SysUser sysUser);
     SysUser queryUserByUserName(SysUser sysUser);
+    public void deleteUserById(SysUser sysUser);
+    public void updateUserById(SysUser sysUser);
+
+
 }
